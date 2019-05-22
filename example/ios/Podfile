@@ -1,0 +1,34 @@
+react_native_path = '../node_modules/react-native'
+platform :ios, '9.0'
+target 'example' do
+    use_frameworks!
+
+    pod 'React', :path => react_native_path, :subspecs => [
+        'Core',
+        #'BatchedBridge',
+        'CxxBridge', # 0.45 版本以后使用这个
+        'DevSupport', # 如果RN版本 >= 0.43，则需要加入此行才能开启开发者菜单
+
+        'RCTAnimation',
+        'RCTActionSheet',
+        'RCTBlob',
+        'RCTGeolocation',
+        'RCTImage',
+        'RCTLinkingIOS',
+        'RCTNetwork',
+        'RCTSettings',
+        'RCTText',
+        'RCTVibration',
+        'RCTWebSocket'
+    ]
+    # 如果你的RN版本 >= 0.42.0，则加入下面这行
+    pod 'yoga', :path => react_native_path + '/ReactCommon/yoga'
+    # Third party deps
+    pod 'DoubleConversion', :podspec => react_native_path + '/third-party-podspecs/DoubleConversion.podspec'
+    #pod 'GLog', :podspec => react_native_path + '/third-party-podspecs/GLog.podspec'
+    #大概从0.52之前的版本使用GLog，之后的使用glog，记得不大清楚。可以查看/node_modules/react-native/third-party-podspecs 文件夹下的文件，或者报错之后再做修改
+    pod 'glog', :podspec => react_native_path + '/third-party-podspecs/glog.podspec'
+    pod 'Folly', :podspec => react_native_path + '/third-party-podspecs/Folly.podspec'
+  pod 'RNPgyerBridge', :path => '../node_modules/react-native-pyger-bridge'
+
+end
