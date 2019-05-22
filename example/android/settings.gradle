@@ -1,5 +1,3 @@
 rootProject.name = 'example'
-include ':react-native-pyger-bridge'
-project(':react-native-pyger-bridge').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-pyger-bridge/android')
 
 include ':app'

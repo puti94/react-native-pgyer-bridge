@@ -1,0 +1,30 @@
+{
+  "name": "react-native-pyger-birdge",
+  "version": "1.0.0",
+  "summary": "React Native 蒲公英组件 for iOS + Android",
+  "homepage": "https://github.com/puti94/react-native-pyger-birdge#readme",
+  "license": "MIT",
+  "authors": {
+    "author": "1059592160@qq.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/puti94/react-native-pyger-birdge.git",
+    "tag": "master"
+  },
+  "source_files": "ios/*.{h,m}",
+  "requires_arc": true,
+  "dependencies": {
+    "React": [
+
+    ],
+    "Pgyer": [
+
+    ],
+    "PgyUpdate": [
+
+    ]
+  }
+}

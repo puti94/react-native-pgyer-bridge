@@ -29,6 +29,5 @@ target 'example' do
     #大概从0.52之前的版本使用GLog，之后的使用glog，记得不大清楚。可以查看/node_modules/react-native/third-party-podspecs 文件夹下的文件，或者报错之后再做修改
     pod 'glog', :podspec => react_native_path + '/third-party-podspecs/glog.podspec'
     pod 'Folly', :podspec => react_native_path + '/third-party-podspecs/Folly.podspec'
-  pod 'RNPgyerBridge', :path => '../node_modules/react-native-pyger-bridge'
 
 end

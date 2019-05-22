@@ -212,6 +212,16 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    END OF TERMS AND CONDITIONS
 
 
+## PgyUpdate
+
+Copyright 2015 pgyer.com. All rights reserved.
+
+
+## Pgyer
+
+Copyright 2017 pgyer.com. All rights reserved.
+
+
 ## React
 
 MIT License
