@@ -16,8 +16,6 @@ Pod::Spec.new do |s|
 
 
   s.dependency "React"
-  s.dependency "Pgyer"
-  s.dependency "PgyUpdate"
 
 end
 
