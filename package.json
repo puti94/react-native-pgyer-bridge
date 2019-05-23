@@ -1,14 +1,18 @@
-
 {
   "name": "react-native-pgyer-bridge",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "react-native 蒲公英插件",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/puti94/react-native-pgyer-bridge"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "pyger"
   ],
   "author": "",
   "license": "",

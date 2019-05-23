@@ -24,9 +24,9 @@ class Pgyer {
    * @param [ios] themeColor  开发者可以通过设置用户反馈界面的颜色主题来改变界面风格，设置之后的颜色会影响到Title的背景颜色和录音按钮的边框颜色，默认为0x37C5A1(绿色)
    * @param [android] colorDialogTitle  设置Dialog 标题的字体颜色，默认为颜色为#ffffff
    * @param [android] colorTitleBg     设置Dialog 标题栏的背景色，默认为颜色为#2E2D2D
-   * @param [android] barBackgroundColor
-   * @param [android] barButtonPressedColor
-   * @param [android] colorPickerBackgroundColor
+   * @param [android] barBackgroundColor  设置顶部按钮和底部背景色，默认颜色为 #2E2D2D
+   * @param [android] barButtonPressedColor    设置顶部按钮和底部按钮按下时的反馈色 默认颜色为 #383737
+   * @param [android] colorPickerBackgroundColor 设置颜色选择器的背景色,默认颜色为 #272828
    */
   initWithConfig({
                    appId,
