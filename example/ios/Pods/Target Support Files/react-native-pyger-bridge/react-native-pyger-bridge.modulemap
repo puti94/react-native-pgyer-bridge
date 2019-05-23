@@ -1,6 +1,0 @@
-framework module react_native_pyger_bridge {
-  umbrella header "react-native-pyger-bridge-umbrella.h"
-
-  export *
-  module * { export * }
-}

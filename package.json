@@ -12,15 +12,11 @@
   ],
   "author": "",
   "license": "",
-  "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
-
-  },
   "files": [
     "index.js",
     "android",
     "ios",
+    "react-native-pgyer-bridge.podspec",
     "README.md"
   ]
 }
