@@ -114,15 +114,15 @@ SystemConfiguration.framework
 ```javascript
 import Pgyer from 'react-native-pgyer-bridge';
 //在入口处初始化蒲公英，appId为蒲公英上传安装包后应用的appKey
-Pyger.initWithConfig({appId:'xxx'});
+Pgyer.initWithConfig({appId:'xxx'});
 //简单的检查更新
-Pyger.checkUpdate();
+Pgyer.checkUpdate();
 //截图并且显示反馈弹窗
-Pyger.showFeedbackView();
+Pgyer.showFeedbackView();
 //获取更新信息
-Pyger.getUpdateInfo();
+Pgyer.getUpdateInfo();
 //自动发送错误日志,ios官方sdkapi有问题,安卓有效
-Pyger.reportException({
+Pgyer.reportException({
               name: 'MY IS CUSTOM EXCEPTION',
               reason: "CUSTOM",
               userInfo: {
