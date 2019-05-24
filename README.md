@@ -1,6 +1,23 @@
 
 # react-native-pgyer-bridge
 
+## 介绍
+
+
+桥接[蒲公英](!https://www.pgyer.com/doc)的sdk,以便使用蒲公英的更新检查，bug反馈，异常检测功能，可以直接在蒲公英应用管理端查看。对于公司没有详细测试流程的可以接入。
+
+## 使用场景
+- 测试人员可以摇一摇反馈bug
+![avatar](img/android_back.png)
+![avatar](img/ios_back.png)
+- 检查更新,有更新就会自动安装
+![avatar](img/android_update.png)
+![avatar](img/android_down.png)
+![avatar](img/android_install.png)
+![avatar](img/ios_update.png)
+- 后台查看
+![avatar](img/feed_back.png)
+![avatar](img/crash.png)
 ## Getting started
 
 `$ npm install react-native-pgyer-bridge --save` or `$ yarn add react-native-pgyer-bridge`
@@ -34,6 +51,15 @@
       compile project(':react-native-pgyer-bridge')
   	```
 ### 配置项
+ - ios 切换到 Build Phases选项卡中，在 Link Binary With Libraries 中添加如下六个系统 framework
+ ```xml
+CoreTelephony.framework
+OpenGLES.framework
+CoreMotion.framework
+AudioToolbox.framework
+AvFoundation.framework
+SystemConfiguration.framework
+```
  - 安卓配置 AndroidManifest
  ```xml
 <!-- 必选-->
@@ -84,10 +110,10 @@
 
 
 ```
-## Usage  可看example
+## Usage
 ```javascript
 import Pgyer from 'react-native-pgyer-bridge';
-//在入口处初始化蒲公英
+//在入口处初始化蒲公英，appId为蒲公英上传安装包后应用的appKey
 Pyger.initWithConfig({appId:'xxx'});
 //简单的检查更新
 Pyger.checkUpdate();
@@ -95,7 +121,7 @@ Pyger.checkUpdate();
 Pyger.showFeedbackView();
 //获取更新信息
 Pyger.getUpdateInfo();
-//自动发送错误日志,安卓有效
+//自动发送错误日志,ios官方sdkapi有问题,安卓有效
 Pyger.reportException({
               name: 'MY IS CUSTOM EXCEPTION',
               reason: "CUSTOM",
@@ -105,6 +131,6 @@ Pyger.reportException({
                 cc: {aa: 'SAD21321321'}
               }
             })
-//
+//更多详细的用法可以看example
 
 ```
