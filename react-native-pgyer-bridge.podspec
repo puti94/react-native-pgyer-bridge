@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author             = { "author" => "1059592160@qq.com" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/puti94/react-native-pgyer-bridge.git", :tag => "master" }
-  s.source_files  = "RNPgyerBridge/**/*.{h,m}"
+  s.source_files  = "ios/*.{h,m}"
   s.requires_arc = true
 
 
