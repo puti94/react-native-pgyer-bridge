@@ -19,6 +19,7 @@
   "files": [
     "index.js",
     "android",
+    "img",
     "ios",
     "react-native-pgyer-bridge.podspec",
     "README.md"
